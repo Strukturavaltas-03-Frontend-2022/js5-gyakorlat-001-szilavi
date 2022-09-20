@@ -5,8 +5,8 @@ function Walker(name = "John Doe", state = "dead") {
   Walker.prototype.walk = function (speedInMph = 10) {
     return `${this.name} the ${this.state} walks with ${speedInMph} mph!`;
   };
-  Walker.prototype.eat = function (food = "meat") {
-    return `${this.name} the ${this.state} eats ${food}!`;
+  Walker.prototype.eat = function (foodName = "meat") {
+    return `${this.name} the ${this.state} eats ${foodName}!`;
   };
   Walker.prototype.speak = function (sound = "grrrrrr") {
     return `${this.name} the ${this.state} says ${sound}!`;
